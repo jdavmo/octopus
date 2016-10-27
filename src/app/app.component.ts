@@ -2,6 +2,7 @@
  * Angular 2 decorators and services
  */
 import { Component, ViewEncapsulation } from '@angular/core';
+import { Router, CanActivate, ActivatedRoute } from '@angular/router';
 
 import { AppState } from './app.service';
 
@@ -16,7 +17,7 @@ import { AppState } from './app.service';
     './app.component.css'
   ],
   template: `
-    <nav>
+    <!--nav>
       <span>
         <a [routerLink]=" ['./'] ">
           Index
@@ -40,22 +41,22 @@ import { AppState } from './app.service';
           About
         </a>
       </span>
-    </nav>
+    </nav-->
 
     <main>
       <router-outlet></router-outlet>
     </main>
 
-    <pre class="app-state">this.appState.state = {{ appState.state | json }}</pre>
+    <!--pre class="app-state">this.appState.state = {{ appState.state | json }}</pre-->
 
-    <footer>
+    <!--footer>
       <span>WebPack Angular 2 Starter by <a [href]="url">@AngularClass</a></span>
       <div>
         <a [href]="url">
           <img [src]="angularclassLogo" width="25%">
         </a>
       </div>
-    </footer>
+    </footer-->
   `
 })
 export class AppComponent {
@@ -64,12 +65,12 @@ export class AppComponent {
   url = 'https://twitter.com/AngularClass';
 
   constructor(
-    public appState: AppState) {
+    public appState: AppState, public activatedRoute: ActivatedRoute) {
 
   }
 
   ngOnInit() {
-    console.log('Initial App State', this.appState.state);
+
   }
 
 }

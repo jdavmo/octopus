@@ -14,8 +14,12 @@ import { ROUTES } from './app.routes';
 import { AppComponent } from './app.component';
 import { APP_RESOLVER_PROVIDERS } from './app.resolver';
 import { AppState, InternalStateType } from './app.service';
+import { RallyService } from './shared/rally.service';
+import { AuthInGuard }  from './shared/auth.guard';
 import { HomeComponent } from './home';
 import { AboutComponent } from './about';
+import { AuthComponent } from './auth';
+import { DashboardComponent } from './dashboard';
 import { NoContentComponent } from './no-content';
 import { XLarge } from './home/x-large';
 
@@ -40,6 +44,8 @@ type StoreType = {
     AppComponent,
     AboutComponent,
     HomeComponent,
+    AuthComponent,
+    DashboardComponent,
     NoContentComponent,
     XLarge
   ],
@@ -51,7 +57,9 @@ type StoreType = {
   ],
   providers: [ // expose our Services and Providers into Angular's dependency injection
     ENV_PROVIDERS,
-    APP_PROVIDERS
+    APP_PROVIDERS,
+    RallyService,
+    AuthInGuard
   ]
 })
 export class AppModule {
