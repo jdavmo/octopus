@@ -34,6 +34,19 @@ module.exports = {
     { rel: 'icon', type: 'image/png', sizes: '96x96', href: '/assets/icon/favicon-96x96.png' },
     { rel: 'icon', type: 'image/png', sizes: '16x16', href: '/assets/icon/favicon-16x16.png' },
 
+    /** Bootstrap core CSS **/
+    { rel: 'stylesheet', href: 'assets/tplDashboard/assets/css/bootstrap.min.css' },
+    /** Animation library for notifications **/
+    { rel: 'stylesheet', href: 'assets/tplDashboard/assets/css/animate.min.css' },
+    /** Paper Dashboard core CSS **/
+    { rel: 'stylesheet', href: 'assets/tplDashboard/assets/css/paper-dashboard.css' },
+    /** CSS for Demo Purpose, don't include it in your project **/
+    { rel: 'stylesheet', href: 'assets/tplDashboard/assets/css/demo.css' },
+    /** Fonts and icons **/
+    { rel: 'stylesheet', href: 'http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css' },
+    { rel: 'stylesheet', type: 'text/css', href: 'https://fonts.googleapis.com/css?family=Muli:400,300' },
+    { rel: 'stylesheet', href: 'assets/tplDashboard/assets/css/themify-icons.css' },
+
     /** <link> tags for a Web App Manifest **/
     { rel: 'manifest', href: '/assets/manifest.json' }
   ],
