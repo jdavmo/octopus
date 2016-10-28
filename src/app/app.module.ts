@@ -20,6 +20,10 @@ import { HomeComponent } from './home';
 import { AboutComponent } from './about';
 import { AuthComponent } from './auth';
 import { DashboardComponent } from './dashboard';
+import { CodereviewComponent } from './codereview';
+import { FooteroctComponent } from './shared/footeroct/footeroct.component';
+import { NavbaroctComponent } from './shared/navbaroct/navbaroct.component';
+import { SidebaroctComponent } from './shared/sidebaroct/sidebaroct.component';
 import { NoContentComponent } from './no-content';
 import { XLarge } from './home/x-large';
 
@@ -45,7 +49,11 @@ type StoreType = {
     AboutComponent,
     HomeComponent,
     AuthComponent,
+    FooteroctComponent,
+    NavbaroctComponent,
+    SidebaroctComponent,
     DashboardComponent,
+    CodereviewComponent,
     NoContentComponent,
     XLarge
   ],
