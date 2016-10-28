@@ -3,6 +3,7 @@ import { HomeComponent } from './home';
 import { AboutComponent } from './about';
 import { AuthComponent } from './auth';
 import { DashboardComponent } from './dashboard';
+import { CodereviewComponent } from './codereview';
 import { NoContentComponent } from './no-content';
 import { AuthInGuard }        from './shared/auth.guard';
 
@@ -14,6 +15,7 @@ export const ROUTES: Routes = [
   { path: 'home',  component: HomeComponent, canActivate: [AuthInGuard]},
   { path: 'about', component: AboutComponent, canActivate: [AuthInGuard]},
   { path: 'dashboard', component: DashboardComponent, canActivate: [AuthInGuard]},
+  { path: 'codereview', component: CodereviewComponent, canActivate: [AuthInGuard]},
   { path: 'auth', component: AuthComponent },
   {
     path: 'detail', loadChildren: () => System.import('./+detail').then((comp: any) => {
